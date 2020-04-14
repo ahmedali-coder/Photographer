@@ -1,0 +1,603 @@
+/* start global */
+*
+{
+    box-sizing:border-box
+}
+body
+{
+    font-family:'Ubuntu'
+}
+/* end global */
+/* start navbar */
+.navbar-light .navbar-brand img,
+.navbar
+{
+    width:100px
+}
+nav .container .row > div ul,
+nav .container .row > a
+{
+    margin:0 !important
+}
+nav .container .row > div ul li
+{
+    width:50%
+}
+nav .container .row .collapse .navbar-nav .nav-link
+{
+    color:#919191;
+    transition:all .3s ease-in-out
+}
+nav .container .row .collapse .navbar-nav .nav-link:hover,
+nav .container .row .collapse .navbar-nav .active
+{
+    color:#2b3439
+}
+.navbar
+{
+    width:100%;
+    z-index:2;
+    min-height:60px
+}
+@media (min-width:992px)
+{
+    .navbar .container .navbar-brand
+    {
+        position:absolute;
+        left:45%
+    }
+    .navbar .left,
+    .navbar .right,
+    .navbar .collapse ul li
+    {
+        width:40%
+    }
+    .navbar .left
+    {
+        margin-right:10%
+    }
+    .navbar .right
+    {
+        margin-left:10%
+    }
+    .navbar .collapse ul
+    {
+        width:100%;
+        text-align:center
+    }
+}
+/* end navbar */
+/* start header */
+header,
+.navbar
+{
+    position:fixed;
+    top:0;
+    left:0;
+}
+header
+{
+    right:0;
+    overflow:hidden;
+    bottom:0
+}
+header .carousel,
+header .carousel .carousel-inner,
+header .carousel .carousel-inner .carousel-item,
+header .carousel .carousel-inner .carousel-item img
+{
+    height:100%
+}
+header .carousel .carousel-inner .carousel-item img
+{
+    width:100%
+}
+/* end header */
+/** start content **/
+.content
+{
+    padding-top:50px;
+    background-color:#f8f9fa;
+    position:relative;
+    top:100vh
+}
+/* start about us */
+.content .about-us p
+{
+    font-weight:bolder;
+    font-size:x-large;
+    margin-bottom:50px;
+    color:#2b3439
+}
+@media(max-width:767px)
+{
+    .content .about-us p
+    {
+        font-size:medium
+    }
+}
+.content .about-us .some-works,
+.content .about-us .some-works .works-items
+{
+    overflow:hidden
+}
+.content .about-us .some-works .works-items,
+.content .about-us .some-works .works-items img
+{
+    transition:all .3s ease-in-out
+
+}
+.content .about-us .some-works .works-items
+{
+    margin:30px 2%;
+    width:46%;
+    float:left;
+    height:420px;
+    border-radius:50px
+}
+@media(max-width:767px)
+{
+    .content .about-us .some-works .works-items
+    {
+        margin:30px 5%;
+        width:90%
+    }
+}
+.content .about-us .some-works .works-items img
+{
+    width:100%;
+    height:100%;
+    padding:0
+}
+.content .about-us .some-works .works-items img:hover
+{
+    transform:scale(1.3)
+}
+.content .about-us .some-works .works-items:hover
+{
+    box-shadow:0 0 25px;
+}
+/* start subscribe */
+.content .subscribe,
+.content .subscribe .overlayer
+{
+    height:500px
+}
+.content .subscribe
+{
+    background-image:url('../images/1.gif');
+    background-size:cover;
+    text-align:center;
+    color:#f8f9fa;
+    margin-top:50px;
+    box-shadow:0 0 30px #000
+}
+.content .subscribe .overlayer
+{
+    background-color:rgba(0, 0, 0, .7)
+}
+.content .subscribe .overlayer h3
+{
+    text-transform:uppercase;
+    border-bottom:3px solid #f8f9fa;
+    padding:15px 50px;
+    display:inline-block;
+    margin:85px 0 30px;
+}
+.content .subscribe .overlayer p
+{
+    font-weight:inherit;
+    font-size:20px;
+    margin:0 0 90px
+}
+.content .subscribe .overlayer form
+{
+    margin:30px
+}
+.content .subscribe .overlayer form input[name="email"]
+{
+    border:none;
+    padding:10px;
+    width:350px;
+    background-color:#f8f9fa;
+    color:#2b3439
+}
+.content .subscribe .overlayer form input[type="submit"]
+{
+    border:1px solid #f8f9fa;
+    background:none;
+    color:#f8f9fa;
+    width:150px;
+    padding:9px;
+    transition:all .3s ease-in-out;
+    margin:10px
+}
+.content .subscribe .overlayer form input[type="submit"]:hover
+{
+    color:#2b3439;
+    background-color:#f8f9fa
+}
+/** end content **/
+/* start footer */
+footer
+{
+    background-color:#f8f9fa;
+    text-align:center;
+    overflow:hidden
+}
+footer i
+{
+    margin:30px 10px 0;
+    color:#2b3439;
+    transition:all .3s ease-in-out
+}
+footer .social-icons .fa-facebook-f:hover
+{
+    color:#3b5998
+}
+footer .social-icons .fa-twitter:hover
+{
+    color:#1da1f2
+}
+footer .social-icons .fa-instagram:hover
+{
+    color:#e1306c
+}
+footer .social-icons .fa-behance:hover
+{
+    color:#1769ff
+}
+footer .social-icons .fa-pinterest:hover
+{
+    color:#bd081c
+}
+footer .social-icons .fa-whatsapp:hover
+{
+    color:#075e54
+}
+footer .copyright
+{
+    font-size:15px;
+    font-weight:inherit;
+    margin:25px;
+    color:#919191
+}
+@media(max-width:767px)
+{
+    footer .social-icons i
+    {
+        font-size:25px
+    }
+}
+/*** start works page ***/
+.swiper-container
+{
+    padding:60px 0 0
+}
+.swiper-slide,
+.swiper-slide img
+{
+    transition:all .3s ease-in-out
+}
+.swiper-slide
+{
+    margin-left:1%;
+    height:calc(100vh - 196px);
+    overflow:hidden;
+    border-radius:50px
+}
+.swiper-slide img
+{
+    width:100%;
+    height:100%
+}
+.swiper-slide img:hover
+{
+    transform:scale(1.3)
+}
+.swiper-slide:hover
+{
+    box-shadow:0 0 25px;
+}
+.swiper-container .swiper-button-next,
+.swiper-container .swiper-button-prev
+{
+    color:#2b3439
+}
+/*** sart about page ***/
+.about
+{
+    padding:0 50px;
+    position:relative
+}
+.about .me
+{
+    padding:80px;
+    height:650px;
+    overflow:hidden
+}
+@media(max-width:767px)
+{
+    .about .me
+    {
+        height:290px
+    }
+}
+@media(min-width:768px)
+{
+    .about .me
+    {
+        height:420px
+    }
+}
+@media(min-width:992px)
+{
+    .about .me
+    {
+        height:550px
+    }
+}
+@media(min-width:1200px)
+{
+    .about .me
+    {
+        height:650px
+    }
+}
+.about .me img
+{
+    width:100%
+}
+.about > p,
+.about-me h2,
+.about .about-me p,
+.about .instagram h2,
+.about .instagram button a
+{
+    color:#2b3439
+}
+.about > p,
+.about .about-me p
+{
+    font-size:x-large
+}
+.about > p
+{
+    font-weight:bolder;
+    margin-top:60px
+}
+@media(max-width:767px)
+{
+    .about > p
+    {
+        font-size:medium;
+        margin-top:20px
+    }
+}
+.about-me h2,
+.about .instagram
+{
+    text-align:center
+}
+.about-me h2
+{
+    text-transform:uppercase;
+    border-bottom:3px solid #dbdbdb;
+    padding:25px
+}
+.about .about-me p
+{
+    margin-top:30px;
+    padding:0 30px
+}
+@media(max-width:767px)
+{
+    .about .about-me p
+    {
+        font-size:medium;
+    }
+}
+.about .instagram
+{
+    margin:50px 0;
+    overflow:hidden;
+}
+.about .instagram h2
+{
+    text-transform:uppercase;
+    border-bottom:3px solid #dbdbdb;
+    padding:25px;
+}
+.about .instagram .insta-img,
+.about .instagram .insta-img img,
+.about .instagram button,
+.about .instagram button a
+{
+    transition:all .3s ease-in-out
+}
+.about .instagram .insta-img
+{
+    width:23%;
+    overflow:hidden;
+    float:left;
+    margin:20px 1%;
+    height:250px;
+    border-radius:50px
+}
+@media(max-width:767px)
+{
+    .about .instagram .insta-img
+    {
+        width:46%;
+        margin:20px 2%;
+        height:250px;
+    }
+}
+.about .instagram .insta-img img
+{
+    width:100%;
+    height:100%
+}
+.about .instagram .insta-works
+{
+    margin:30px 0
+}
+.about .instagram button
+{
+    background:none;
+    border:2px solid #2b3439;
+    padding:10px 50px;
+    letter-spacing:2px;
+    border-radius:10px
+}
+.about .instagram button:hover
+{
+    background-color:#2b3439
+}
+.about .instagram button a
+{
+    text-decoration:none;
+    font-size:20px
+}
+.about .instagram button:hover a
+{
+    color:#dbdbdb
+}
+.about .instagram .insta-img img:hover
+{
+    transform:scale(1.3)
+}
+.about .instagram .insta-img:hover
+{
+    box-shadow:0 0 25px;
+}
+/*** start Q&A page ***/
+.Q-A
+{
+    padding:60px;
+}
+hr
+{
+    color:#dbdbdb;
+}
+.Q-A h2
+{
+    color:#2b3439
+}
+.Q-A .questions .question-no
+{
+    background-color:#f8f9fa;
+    margin:5px;
+    padding:10px 40px;
+    position:relative
+}
+.Q-A .questions .question-no p
+{
+    display:none;
+    color:#9b9b9b
+}
+.Q-A .questions .question-no i
+{
+    position:absolute;
+    right:10px;
+    top:13px
+}
+/*** start contact page ***/
+.contact
+{
+    padding:80px;
+    text-align:center;
+    background:url('../images/contact.jpg') center no-repeat;
+    background-size:cover;
+    color:#dbdbdb
+}
+.contact .contact-me p
+{
+    font-size:x-large;
+    margin-top:30px;
+    padding:0 30px
+}
+@media(max-width:767px)
+{
+    .contact .contact-me p
+    {
+        font-size:medium
+    }  
+}
+.contact .contact-me span
+{
+    font-size:xx-large
+}
+@media(max-width:767px)
+{
+    .contact .contact-me span
+    {
+        font-size:large
+    }  
+}
+.contact .contact-me form
+{
+    padding:0 250px
+}
+@media(max-width:767px)
+{
+    .contact .contact-me form
+    {
+        padding:0 50px
+    }  
+}
+@media(min-width:768px)
+{
+    .contact .contact-me form
+    {
+        padding:0 100px
+    }  
+}
+@media(min-width:992px)
+{
+    .contact .contact-me form
+    {
+        padding:0 200px
+    }  
+}
+@media(min-width:1200px)
+{
+    .contact .contact-me form
+    {
+        padding:0 250px
+    }  
+}
+.contact .contact-me form input,
+.contact .contact-me form textarea
+{
+    display:block;
+    width:100%;
+    padding:10px;
+    margin:10px;
+    background:none;
+    border:1px solid #dbdbdb;
+    border-radius:5px;
+    color:#f8f9fa
+}
+.contact .contact-me form textarea
+{
+    height:150px;
+}
+.contact .contact-me form input[type="submit"]
+{
+    width:30%;
+    transition:all .3s ease-in-out
+}
+.contact .contact-me form input[type="submit"]:hover
+{
+    background-color:#2b3439;
+    border:2px solid #2b3439;
+    color:#dbdbdb
+}
+:focus::-webkit-input-placeholder,
+:focus::-moz-placeholder,
+:focus:-ms-input-placeholder,
+:focus:-moz-placeholder
+{
+    opacity:0
+}
